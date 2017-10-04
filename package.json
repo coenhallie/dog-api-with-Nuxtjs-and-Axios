@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-surge-test",
+  "name": "dog-api-axios-test",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "Nuxt.js with Dog.ceo API",
   "author": "coenhallie <coenhallie@gmail.com>",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "buefy": "^0.5.3",
     "bulma": "^0.5.3",
     "nuxt": "^1.0.0-rc11"
@@ -26,6 +27,7 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "vue-particles": "^1.0.9"
   }
 }

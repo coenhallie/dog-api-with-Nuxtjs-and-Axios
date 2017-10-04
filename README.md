@@ -1,6 +1,6 @@
-# nuxt-surge-test
+# Dog API test with Nuxtjs & Axios
 
-> Nuxt.js project
+> testing the dog.ceo API in combination with Vuejs, Nuxtjs & Axios
 
 ## Build Setup
 

@@ -1,27 +1,32 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
       <h1 class="title">
-        coen test
+        Dog API - test
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        dog.ceo API used with Nuxtjs & Axiom
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
+      <a v-for="breed in breeds" :key="breed" class="breed" :href="'/dogs/'+breed">
+        {{breed}}
+      </a>
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import axios from 'axios'
 
 export default {
-  components: {
-    Logo
+  asyncData ({ params }, callback) {
+    axios.get('https://dog.ceo/api/breeds/list')
+      .then((res) => {
+        callback(null, { breeds: res.data.message })
+      })
   }
 }
 </script>
